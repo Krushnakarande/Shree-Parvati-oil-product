@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.google.gms.google.services)
+
 }
 
 android {
@@ -59,7 +60,7 @@ dependencies {
         implementation ("androidx.navigation:navigation-fragment-ktx:2.7.3")
         implementation ("androidx.navigation:navigation-ui-ktx:2.7.3")
 
-
-
     implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
+
+
 }

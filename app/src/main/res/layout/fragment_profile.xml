@@ -6,14 +6,41 @@
     android:orientation="vertical"
     android:background="@color/white"
     android:paddingStart="10dp"
-    android:paddingRight="10dp"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
     tools:context="Fragment.ProfileFragment">
 
     <LinearLayout
-        android:layout_width="401dp"
+        android:layout_width="386dp"
         android:layout_height="517dp"
         android:orientation="vertical"
         android:paddingRight="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/preofileedittextshape"
+            android:elevation="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/abyssinica_sil"
+                android:text="User Profile "
+                android:textColor="#FF9800"
+                android:textSize="35dp" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,6 +65,7 @@
                 android:textSize="16sp" />
 
             <EditText
+                android:id="@+id/editname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -46,15 +74,16 @@
                 android:fontFamily="@font/abyssinica_sil"
                 android:inputType="text"
                 android:minHeight="48dp"
-                android:text="Name" />
+                android:hint="Name" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="32dp"
             android:layout_marginRight="8dp"
+
             android:background="@drawable/preofileedittextshape"
             android:elevation="2dp"
             android:gravity="center_vertical"
@@ -71,14 +100,16 @@
                 android:textSize="16sp" />
 
             <EditText
+                android:id="@+id/editaddress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:ems="10"
                 android:fontFamily="@font/abyssinica_sil"
-                android:inputType="textMultiLine"
-                android:text="shri parvati oil nahik.." />
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:hint="Shri Parvati Oil Products...." />
         </LinearLayout>
 
         <LinearLayout
@@ -103,6 +134,7 @@
                 android:textSize="16sp" />
 
             <EditText
+                android:id="@+id/editemail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -111,7 +143,7 @@
                 android:fontFamily="@font/abyssinica_sil"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
-                android:text="abc@gmail.com" />
+                android:hint= "abc@gmail.com" />
         </LinearLayout>
 
         <LinearLayout
@@ -136,6 +168,7 @@
                 android:textSize="16sp" />
 
             <EditText
+                android:id="@+id/editphone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -144,89 +177,34 @@
                 android:fontFamily="@font/abyssinica_sil"
                 android:inputType="phone"
                 android:minHeight="48dp"
-                android:text="1234567890" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginRight="8dp"
-            android:background="@drawable/preofileedittextshape"
-            android:elevation="2dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/abyssinica_sil"
-                android:text="Land Area"
-                android:textColor="#C5A649"
-                android:textSize="16sp" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:ems="10"
-                android:fontFamily="@font/abyssinica_sil"
-                android:inputType="text"
-                android:minHeight="48dp"
-                android:text="30 acre" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/preofileedittextshape"
-            android:elevation="2dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView20"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/abyssinica_sil"
-                android:text="Crops You Are Taking"
-                android:textColor="#C5A649"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/editTextText3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:ems="10"
-                android:fontFamily="@font/abyssinica_sil"
-                android:inputType="textImeMultiLine"
-                android:minHeight="48dp"
-                android:text="crop name" />
+                android:hint="1234567890" />
         </LinearLayout>
 
     </LinearLayout>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button7"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/editbutton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/greenbuttongradient"
+        android:elevation="5dp"
+        android:fontFamily="@font/abyssinica_sil"
+        android:layout_marginTop="460dp"
+        android:text="Edit Information"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/savebutton"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginRight="8dp"
             android:layout_marginLeft="8dp"
             android:background="@drawable/greenbuttongradient"
             android:elevation="5dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="10dp"
             android:textAllCaps="false"
             android:layout_gravity="bottom"
             android:textColor="@color/white"
